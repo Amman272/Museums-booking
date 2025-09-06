@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Museums Now Design System - Heritage & Cultural Theme */
+
+@layer base {
+  :root {
+    /* Museum Heritage Color Palette */
+    --background: 41 24% 97%;
+    --foreground: 25 47% 15%;
+
+    --card: 41 31% 95%;
+    --card-foreground: 25 47% 15%;
+
+    --popover: 41 31% 95%;
+    --popover-foreground: 25 47% 15%;
+
+    /* Primary - Rich Museum Brown */
+    --primary: 25 47% 25%;
+    --primary-foreground: 41 24% 97%;
+
+    /* Secondary - Warm Cream */
+    --secondary: 41 31% 88%;
+    --secondary-foreground: 25 47% 15%;
+
+    /* Muted - Soft Beige */
+    --muted: 41 20% 92%;
+    --muted-foreground: 25 25% 45%;
+
+    /* Accent - Heritage Gold */
+    --accent: 45 93% 47%;
+    --accent-foreground: 25 47% 15%;
+
+    /* Heritage Gold Variants */
+    --gold: 45 93% 47%;
+    --gold-light: 45 85% 65%;
+    --gold-dark: 45 100% 35%;
+
+    /* Museum Brown Variants */
+    --brown-light: 25 35% 65%;
+    --brown-medium: 25 47% 45%;
+    --brown-dark: 25 55% 20%;
+
+    /* Status Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 41 24% 97%;
+    
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+
+    --border: 41 20% 85%;
+    --input: 41 20% 90%;
+    --ring: 45 93% 47%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-heritage: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--brown-medium)));
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--gold-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)));
+    
+    /* Shadows */
+    --shadow-museum: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-gold: 0 0 20px hsl(var(--gold) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 25 47% 15%;
+    --foreground: 41 24% 97%;
+
+    --card: 25 47% 20%;
+    --card-foreground: 41 24% 97%;
+
+    --popover: 25 47% 20%;
+    --popover-foreground: 41 24% 97%;
+
+    --primary: 41 24% 97%;
+    --primary-foreground: 25 47% 15%;
+
+    --secondary: 25 35% 25%;
+    --secondary-foreground: 41 24% 97%;
+
+    --muted: 25 35% 25%;
+    --muted-foreground: 41 20% 75%;
+
+    --accent: 45 93% 47%;
+    --accent-foreground: 25 47% 15%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 41 24% 97%;
+
+    --border: 25 35% 30%;
+    --input: 25 35% 30%;
+    --ring: 45 93% 47%;
+
+    /* Heritage Gold Variants - same in dark */
+    --gold: 45 93% 47%;
+    --gold-light: 45 85% 65%;
+    --gold-dark: 45 100% 35%;
+
+    /* Museum Brown Variants - adjusted for dark */
+    --brown-light: 25 35% 65%;
+    --brown-medium: 25 47% 45%;
+    --brown-dark: 25 55% 80%;
+
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
